@@ -1,0 +1,11 @@
+node_modules/
+.npm-cache/
+.env
+playwright-report/
+test-results/
+blob-report/
+coverage/
+*.log
+.DS_Store
+.idea/
+.vscode/
