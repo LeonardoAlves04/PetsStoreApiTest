@@ -86,20 +86,7 @@ npm run test:report     # abre o último relatório HTML
 - Consulta de pedido inexistente (negativo)
 - Validação do contrato da resposta
 
-## Relatórios e evidências
-
-Ao final da execução, o Playwright gera:
-
-- `playwright-report/index.html`: relatório navegável com resultados e passos;
-- `test-results/`: traces preservados em caso de falha.
-
-Na aba **Actions** do GitHub, abra a execução da workflow **Testes de API** e baixe o artefato `playwright-report`. Ele é publicado mesmo quando algum teste falha e fica disponível por 14 dias.
-
-Para enriquecer o portfólio, execute a pipeline após publicar o repositório e adicione aqui uma captura da execução aprovada:
-
-```md
-![Pipeline executada com sucesso](docs/evidencias/pipeline-sucesso.png)
-```
+line executada com sucesso](docs/evidencias/pipeline-sucesso.png)
 
 ## Boas práticas aplicadas
 
