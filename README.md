@@ -1,8 +1,6 @@
 # Automação de API — Swagger Petstore
 
-Projeto de portfólio para demonstrar automação de testes de API com **Playwright + TypeScript** em uma pipeline de integração contínua. A suíte cobre fluxos positivos e negativos dos domínios de pets, usuários e pedidos da [Swagger Petstore](https://petstore.swagger.io/).
-
-> A Petstore é uma API pública e compartilhada. Os testes criam dados únicos para reduzir colisões, mas indisponibilidades e alterações externas ainda podem afetar execuções pontuais.
+Projeto de portfólio para demonstrar automação de testes de API com **Playwright + TypeScript**. A suíte cobre fluxos positivos e negativos dos domínios de pets, usuários e pedidos da [Swagger Petstore](https://petstore.swagger.io/).
 
 ## Tecnologias
 
@@ -39,18 +37,6 @@ Projeto de portfólio para demonstrar automação de testes de API com **Playwri
 
 Pré-requisitos: [Node.js](https://nodejs.org/) 20 ou superior e npm.
 
-```bash
-git clone <URL-DO-SEU-REPOSITORIO>
-cd swagger-petstore-api-tests
-npm ci
-```
-
-Opcionalmente, copie `.env.example` para `.env`. Nenhum segredo real é necessário:
-
-```env
-BASE_URL=https://petstore.swagger.io/v2
-```
-
 ## Execução
 
 ```bash
@@ -86,8 +72,6 @@ npm run test:report     # abre o último relatório HTML
 - Consulta de pedido inexistente (negativo)
 - Validação do contrato da resposta
 
-line executada com sucesso](docs/evidencias/pipeline-sucesso.png)
-
 ## Boas práticas aplicadas
 
 - Separação entre testes, clientes, dados, tipos e schemas
@@ -98,7 +82,3 @@ line executada com sucesso](docs/evidencias/pipeline-sucesso.png)
 - Configuração externa sem segredos versionados
 - Retentativas apenas para reduzir instabilidade da API pública
 - CI com validação de tipos, testes e relatório como artefato
-
-## Observação
-
-Esta suíte foi criada para fins educacionais e de portfólio. Ela não é afiliada à Swagger Petstore e não deve ser usada como teste de carga contra o ambiente público.
